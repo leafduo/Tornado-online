@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9219CBE215C067FF005DDB02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9219CBE115C067FF005DDB02 /* Cocoa.framework */; };
+		9219CBEC15C067FF005DDB02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9219CBEA15C067FF005DDB02 /* InfoPlist.strings */; };
+		9219CBEE15C067FF005DDB02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9219CBED15C067FF005DDB02 /* main.m */; };
+		9219CBF215C067FF005DDB02 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9219CBF015C067FF005DDB02 /* Credits.rtf */; };
+		9219CBF515C067FF005DDB02 /* TOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9219CBF415C067FF005DDB02 /* TOAppDelegate.m */; };
+		9219CBF815C06800005DDB02 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9219CBF615C06800005DDB02 /* MainMenu.xib */; };
+		9219CBFB15C06800005DDB02 /* Tornado_online.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9219CBF915C06800005DDB02 /* Tornado_online.xcdatamodeld */; };
+		9219CC0315C06800005DDB02 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9219CC0215C06800005DDB02 /* SenTestingKit.framework */; };
+		9219CC0415C06800005DDB02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9219CBE115C067FF005DDB02 /* Cocoa.framework */; };
+		9219CC0C15C06800005DDB02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9219CC0A15C06800005DDB02 /* InfoPlist.strings */; };
+		9219CC0F15C06800005DDB02 /* Tornado_onlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9219CC0E15C06800005DDB02 /* Tornado_onlineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9219CC0515C06800005DDB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9219CBD415C067FF005DDB02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9219CBDC15C067FF005DDB02;
+			remoteInfo = "Tornado online";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9219CBDD15C067FF005DDB02 /* Tornado online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tornado online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9219CBE115C067FF005DDB02 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9219CBE415C067FF005DDB02 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9219CBE515C067FF005DDB02 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9219CBE615C067FF005DDB02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9219CBE915C067FF005DDB02 /* Tornado online-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tornado online-Info.plist"; sourceTree = "<group>"; };
+		9219CBEB15C067FF005DDB02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9219CBED15C067FF005DDB02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9219CBEF15C067FF005DDB02 /* Tornado online-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tornado online-Prefix.pch"; sourceTree = "<group>"; };
+		9219CBF115C067FF005DDB02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9219CBF315C067FF005DDB02 /* TOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOAppDelegate.h; sourceTree = "<group>"; };
+		9219CBF415C067FF005DDB02 /* TOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOAppDelegate.m; sourceTree = "<group>"; };
+		9219CBF715C06800005DDB02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9219CBFA15C06800005DDB02 /* Tornado_online.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tornado_online.xcdatamodel; sourceTree = "<group>"; };
+		9219CC0115C06800005DDB02 /* Tornado onlineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tornado onlineTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9219CC0215C06800005DDB02 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9219CC0915C06800005DDB02 /* Tornado onlineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tornado onlineTests-Info.plist"; sourceTree = "<group>"; };
+		9219CC0B15C06800005DDB02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9219CC0D15C06800005DDB02 /* Tornado_onlineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tornado_onlineTests.h; sourceTree = "<group>"; };
+		9219CC0E15C06800005DDB02 /* Tornado_onlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tornado_onlineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9219CBDA15C067FF005DDB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CBE215C067FF005DDB02 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9219CBFD15C06800005DDB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CC0315C06800005DDB02 /* SenTestingKit.framework in Frameworks */,
+				9219CC0415C06800005DDB02 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9219CBD215C067FF005DDB02 = {
+			isa = PBXGroup;
+			children = (
+				9219CBE715C067FF005DDB02 /* Tornado online */,
+				9219CC0715C06800005DDB02 /* Tornado onlineTests */,
+				9219CBE015C067FF005DDB02 /* Frameworks */,
+				9219CBDE15C067FF005DDB02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9219CBDE15C067FF005DDB02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9219CBDD15C067FF005DDB02 /* Tornado online.app */,
+				9219CC0115C06800005DDB02 /* Tornado onlineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9219CBE015C067FF005DDB02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9219CBE115C067FF005DDB02 /* Cocoa.framework */,
+				9219CC0215C06800005DDB02 /* SenTestingKit.framework */,
+				9219CBE315C067FF005DDB02 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9219CBE315C067FF005DDB02 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9219CBE415C067FF005DDB02 /* AppKit.framework */,
+				9219CBE515C067FF005DDB02 /* CoreData.framework */,
+				9219CBE615C067FF005DDB02 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9219CBE715C067FF005DDB02 /* Tornado online */ = {
+			isa = PBXGroup;
+			children = (
+				9219CBF315C067FF005DDB02 /* TOAppDelegate.h */,
+				9219CBF415C067FF005DDB02 /* TOAppDelegate.m */,
+				9219CBF615C06800005DDB02 /* MainMenu.xib */,
+				9219CBF915C06800005DDB02 /* Tornado_online.xcdatamodeld */,
+				9219CBE815C067FF005DDB02 /* Supporting Files */,
+			);
+			path = "Tornado online";
+			sourceTree = "<group>";
+		};
+		9219CBE815C067FF005DDB02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9219CBE915C067FF005DDB02 /* Tornado online-Info.plist */,
+				9219CBEA15C067FF005DDB02 /* InfoPlist.strings */,
+				9219CBED15C067FF005DDB02 /* main.m */,
+				9219CBEF15C067FF005DDB02 /* Tornado online-Prefix.pch */,
+				9219CBF015C067FF005DDB02 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9219CC0715C06800005DDB02 /* Tornado onlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				9219CC0D15C06800005DDB02 /* Tornado_onlineTests.h */,
+				9219CC0E15C06800005DDB02 /* Tornado_onlineTests.m */,
+				9219CC0815C06800005DDB02 /* Supporting Files */,
+			);
+			path = "Tornado onlineTests";
+			sourceTree = "<group>";
+		};
+		9219CC0815C06800005DDB02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9219CC0915C06800005DDB02 /* Tornado onlineTests-Info.plist */,
+				9219CC0A15C06800005DDB02 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9219CBDC15C067FF005DDB02 /* Tornado online */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9219CC1215C06800005DDB02 /* Build configuration list for PBXNativeTarget "Tornado online" */;
+			buildPhases = (
+				9219CBD915C067FF005DDB02 /* Sources */,
+				9219CBDA15C067FF005DDB02 /* Frameworks */,
+				9219CBDB15C067FF005DDB02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tornado online";
+			productName = "Tornado online";
+			productReference = 9219CBDD15C067FF005DDB02 /* Tornado online.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9219CC0015C06800005DDB02 /* Tornado onlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9219CC1515C06800005DDB02 /* Build configuration list for PBXNativeTarget "Tornado onlineTests" */;
+			buildPhases = (
+				9219CBFC15C06800005DDB02 /* Sources */,
+				9219CBFD15C06800005DDB02 /* Frameworks */,
+				9219CBFE15C06800005DDB02 /* Resources */,
+				9219CBFF15C06800005DDB02 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9219CC0615C06800005DDB02 /* PBXTargetDependency */,
+			);
+			name = "Tornado onlineTests";
+			productName = "Tornado onlineTests";
+			productReference = 9219CC0115C06800005DDB02 /* Tornado onlineTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9219CBD415C067FF005DDB02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TO;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = leafduo;
+			};
+			buildConfigurationList = 9219CBD715C067FF005DDB02 /* Build configuration list for PBXProject "Tornado online" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9219CBD215C067FF005DDB02;
+			productRefGroup = 9219CBDE15C067FF005DDB02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9219CBDC15C067FF005DDB02 /* Tornado online */,
+				9219CC0015C06800005DDB02 /* Tornado onlineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9219CBDB15C067FF005DDB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CBEC15C067FF005DDB02 /* InfoPlist.strings in Resources */,
+				9219CBF215C067FF005DDB02 /* Credits.rtf in Resources */,
+				9219CBF815C06800005DDB02 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9219CBFE15C06800005DDB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CC0C15C06800005DDB02 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9219CBFF15C06800005DDB02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9219CBD915C067FF005DDB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CBEE15C067FF005DDB02 /* main.m in Sources */,
+				9219CBF515C067FF005DDB02 /* TOAppDelegate.m in Sources */,
+				9219CBFB15C06800005DDB02 /* Tornado_online.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9219CBFC15C06800005DDB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9219CC0F15C06800005DDB02 /* Tornado_onlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9219CC0615C06800005DDB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9219CBDC15C067FF005DDB02 /* Tornado online */;
+			targetProxy = 9219CC0515C06800005DDB02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9219CBEA15C067FF005DDB02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9219CBEB15C067FF005DDB02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9219CBF015C067FF005DDB02 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9219CBF115C067FF005DDB02 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9219CBF615C06800005DDB02 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9219CBF715C06800005DDB02 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9219CC0A15C06800005DDB02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9219CC0B15C06800005DDB02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9219CC1015C06800005DDB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9219CC1115C06800005DDB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9219CC1315C06800005DDB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tornado online/Tornado online-Prefix.pch";
+				INFOPLIST_FILE = "Tornado online/Tornado online-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9219CC1415C06800005DDB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tornado online/Tornado online-Prefix.pch";
+				INFOPLIST_FILE = "Tornado online/Tornado online-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9219CC1615C06800005DDB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tornado online.app/Contents/MacOS/Tornado online";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tornado online/Tornado online-Prefix.pch";
+				INFOPLIST_FILE = "Tornado onlineTests/Tornado onlineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9219CC1715C06800005DDB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tornado online.app/Contents/MacOS/Tornado online";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tornado online/Tornado online-Prefix.pch";
+				INFOPLIST_FILE = "Tornado onlineTests/Tornado onlineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9219CBD715C067FF005DDB02 /* Build configuration list for PBXProject "Tornado online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9219CC1015C06800005DDB02 /* Debug */,
+				9219CC1115C06800005DDB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9219CC1215C06800005DDB02 /* Build configuration list for PBXNativeTarget "Tornado online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9219CC1315C06800005DDB02 /* Debug */,
+				9219CC1415C06800005DDB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9219CC1515C06800005DDB02 /* Build configuration list for PBXNativeTarget "Tornado onlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9219CC1615C06800005DDB02 /* Debug */,
+				9219CC1715C06800005DDB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9219CBF915C06800005DDB02 /* Tornado_online.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9219CBFA15C06800005DDB02 /* Tornado_online.xcdatamodel */,
+			);
+			currentVersion = 9219CBFA15C06800005DDB02 /* Tornado_online.xcdatamodel */;
+			path = Tornado_online.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9219CBD415C067FF005DDB02 /* Project object */;
+}
