@@ -13,10 +13,12 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize webFrame;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    [[webFrame mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lixian.qq.com"]]];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.leafduo.Tornado_online" in the user's Application Support directory.

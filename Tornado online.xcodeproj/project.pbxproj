@@ -18,6 +18,7 @@
 		9219CC0415C06800005DDB02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9219CBE115C067FF005DDB02 /* Cocoa.framework */; };
 		9219CC0C15C06800005DDB02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9219CC0A15C06800005DDB02 /* InfoPlist.strings */; };
 		9219CC0F15C06800005DDB02 /* Tornado_onlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9219CC0E15C06800005DDB02 /* Tornado_onlineTests.m */; };
+		92D7BF2D15C0719A003CCC3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D7BF2C15C0719A003CCC3A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9219CC0B15C06800005DDB02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9219CC0D15C06800005DDB02 /* Tornado_onlineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tornado_onlineTests.h; sourceTree = "<group>"; };
 		9219CC0E15C06800005DDB02 /* Tornado_onlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tornado_onlineTests.m; sourceTree = "<group>"; };
+		92D7BF2C15C0719A003CCC3A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D7BF2D15C0719A003CCC3A /* WebKit.framework in Frameworks */,
 				9219CBE215C067FF005DDB02 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		9219CBE015C067FF005DDB02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D7BF2C15C0719A003CCC3A /* WebKit.framework */,
 				9219CBE115C067FF005DDB02 /* Cocoa.framework */,
 				9219CC0215C06800005DDB02 /* SenTestingKit.framework */,
 				9219CBE315C067FF005DDB02 /* Other Frameworks */,
@@ -447,6 +451,7 @@
 				9219CC1415C06800005DDB02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9219CC1515C06800005DDB02 /* Build configuration list for PBXNativeTarget "Tornado onlineTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +460,7 @@
 				9219CC1715C06800005DDB02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
