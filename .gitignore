@@ -33,3 +33,6 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# vim
+*.swp
