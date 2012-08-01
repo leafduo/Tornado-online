@@ -1,14 +1,17 @@
 require 'rest_client'
 require 'highline/import'
 require 'digest'
+require 'Logger'
+require 'json'
 
 class Tornado
     
     def initialize
-        @cookies = Hash.new
+        @cookies = {}
+        @logger = Logger.new(STDERR)
     end
 
-    def get_check_code()
+    def get_check_code
         check_code_uri = "http://check.ptlogin2.qq.com/check"
         res = RestClient.get check_code_uri,
             {:params => {:appid => 567008010,
@@ -19,9 +22,10 @@ class Tornado
             @uin = eval("\"#{m[3]}\"")
         }
         @cookies.merge! res.cookies
+        @logger.info res.to_str
     end
 
-    def auth()
+    def auth
         auth_uri = "http://ptlogin2.qq.com/login"
         @username = ask("Enter username: ")
         get_check_code
@@ -44,17 +48,26 @@ class Tornado
             :g => 1},
             :cookies => @cookies}
         @cookies.merge! res.cookies
-        puts res.to_str
+        @logger.info res.to_str
         lixian_login_uri = 'http://lixian.qq.com/handler/lixian/do_lixian_login.php'
-        res = RestClient.post lixian_login_uri, {:e=>1}, {:cookies => @cookies}
+        res = RestClient.post lixian_login_uri, '', {:cookies => @cookies}
+        @logger.info res.to_str
         @cookies.merge! res.cookies
+    end
 
-        #TODO: To be removed
-        list_uri = 'http://lixian.qq.com/handler/lixian/get_lixian_list.php'
-        res = RestClient.post list_uri, {:e=>1}, {:cookies => @cookies}
-        puts res.to_str
+    def get_lixian_list
+        lixian_list_uri = 'http://lixian.qq.com/handler/lixian/get_lixian_list.php'
+        res = RestClient.post lixian_list_uri, '', {:cookies => @cookies}
+        JSON.parse(res.to_str[1..-1])  # The result begins with \xfe\xff
+    end
+
+    def get_http_url(hash, filename)
+        http_url = 'http://lixian.qq.com/handler/lixian/get_http_url.php'
+        res = RestClient.post http_url, {:hash => hash, :filename => filename}, {:cookies => @cookies}
+        puts JSON.parse(res.to_str[1..-1])   # The result begins with \xfe\xff
     end
 end
 
 t = Tornado.new
 t.auth
+t.get_http_url('6093ed37e62e05c0ca7767da50c0d3f9e345bc6f386308637f1d63c4ebaae0822024b2b2e3a1ff53', '[EMD][Binbougami ga!][04][BIG5][X264_AAC][1280X720].mp4')
